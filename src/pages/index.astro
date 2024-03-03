@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Button from "../components/Button.astro";
 ---
 
 <Layout title="Home">
@@ -19,8 +18,15 @@ import Button from "../components/Button.astro";
 		</p>
 
 		<div class="m-auto flex justify-between md:justify-start">
-			<Button content="Kampagne" py="3" px="4" color="secondary"/>
-			<Button content="Grüner Wasserstoff" py="3" px="4" color="primary"/>
+			<a
+				href="Campaign"
+				class="m-0 md:mr-5 font-body bg-secondary hover:bg-accent transition-colors py-3 px-4 rounded"
+				>Kampagne
+			</a>
+			<a href="GreenHydrogen"
+				class="m-0 md:mr-5 font-body bg-primary hover:bg-accent transition-colors py-3 px-4 rounded drop-shadow-md font-bold"
+				>Grüner Wasserstoff
+			</a>
 		</div>
 	</div>
 </Layout>
