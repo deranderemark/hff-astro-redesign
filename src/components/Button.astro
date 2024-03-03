@@ -1,0 +1,4 @@
+---
+const { content, py, px, color } = Astro.props;
+---
+<button class=`m-0 md:mr-5 font-body bg-${color} hover:bg-accent transition-colors py-${py} px-${px} rounded ${color === "primary" && "drop-shadow-md font-bold"}`>{content}</button
